@@ -1,0 +1,6 @@
+services:
+
+    barbundle.command.hi:
+        class: BarBundle\Command\HiCommand
+        tags:
+            - {name: 'chaincommandbundle.command', channel: 'my_chain', weight: 20}
